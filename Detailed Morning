@@ -1,0 +1,21 @@
+class Student:
+ name = "John Doe"
+ weekday=True
+ def __init__(self,name,weekday):
+    self.name = name 
+    self.weekday = weekday
+    
+ def morning(self):
+      if self.weekday:
+       return"wakes up"
+      else:
+       return "Sleeps"
+       
+    
+ def welcome(self):
+      return"welcome {} to Akirachix".format(self.name)
+  
+judith= Student("judith mueni",True)
+yvonne= Student("yvonne jahenda",weekday=False)
+print("judith:",judith.morning())
+print("yvonne:",yvonne.morning())

@@ -1,0 +1,26 @@
+class Rectangle:
+  length = 0
+  width = 0
+  def __init__(self,length,width):
+     self.length = length
+     self.width =width
+     self.validatelength=length
+     self.validatewidth = width
+     
+  def validatelength(self):
+    if self.length.isnumeric():
+      raise ValueError("The length{}is not numeric".format(self.length))
+    
+  def validateDimension(self):
+    if self.width.isnumeric()and self.length.isnumeric
+      raise ValueError("The width{}is not numeric".format(self.width))
+     
+     
+  def perimeter (self):
+     return 2 *(self.length + self.width)
+length=input("What is the length?")  
+width =input("What is the Width?")
+print("custom Rectangle)
+small = Rectangle(2,3)
+invalid=Rectangle("fixe",5)
+print(invalid.area()

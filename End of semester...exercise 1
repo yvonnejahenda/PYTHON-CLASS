@@ -1,0 +1,4 @@
+celcius=input("what is the celcius:")
+Farnheit=(32*9/5)+32
+print ("the Farnheit is{}".format(Farnheit))
+print("Farnheit")

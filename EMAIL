@@ -1,0 +1,17 @@
+class student:
+  def __init__(self,names,email):
+    self.names=names
+    self.email=email
+    self.validateEmail()
+    self.validateName()
+    
+  def validateEmail(self):
+    ##search if the string has an art sign/
+    pass
+  
+  def validateName(self):
+    if type(self.names) is not str:
+      raise ValueError("{}is not a valid name".format(self.name))
+      
+jane=student("jane""jane")
+print(jane.email)

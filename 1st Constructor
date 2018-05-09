@@ -1,0 +1,16 @@
+class Student:
+ name = "John Doe"
+ def __init__(self,name):
+    self.name=name 
+    
+    def get_name(self):
+      return self.name
+    
+ def welcome(self):
+    return"welcome {} to Akirachix".format(self.name)
+  
+
+judith=Student("judith Mueni")
+yvonne=Student("yvonne jahenda")
+print(judith.welcome())
+print(yvonne.welcome())

@@ -1,0 +1,3 @@
+names=input('my names',)
+result=names.split(',')
+print(','.join(sorted(list(set(result)))))

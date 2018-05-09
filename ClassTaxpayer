@@ -1,0 +1,24 @@
+class Taxpayer:
+  income=0
+  name="Jane Doe"
+  def __init__(self,name,income):
+    self.income=income
+    self.name=name
+    self.validateIncome()
+    self.validateName()
+    
+  def validateIncome(self):
+    if self.income.isnumeric() ==False:
+      rome=input("What is your income")
+
+  def validateName(self):
+    if self.name.isnumeric():
+      raise ValueError("The name {} Is not  string".format (self.name))
+      
+  def calculate_tax(self):
+    return float(self.income)*0.3
+    
+
+name=input("What is your name?")
+employee=Taxpayer(name,income)
+print(employee.calculate_tax())

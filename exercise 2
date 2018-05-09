@@ -1,0 +1,16 @@
+class person():
+  name:yvonne
+  def __init__(self,name):
+    self.name= name
+  
+    
+  def __getname(self):
+     return(self.name)
+    
+  def printName(self):
+     return "name of the person:{}".format(self.name)
+        
+Brina=person('yvonne')
+print(yvonne.printName)
+    
+    
