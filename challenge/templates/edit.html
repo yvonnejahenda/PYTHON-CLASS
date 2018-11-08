@@ -1,0 +1,24 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+<body>
+  <div class="container">
+  <form action="{{url_for('welcome')}}" method = "POST">
+  <div class="form-group">
+    <label for="name">Title</label>
+    <input type="text" class="form-control" id="name" value="{{name}}" placeholder="Title" name="Title">
+
+  </div>
+    <div class="form-group">
+    <label for="Name">Name</label>
+    <label for="Title"></label>
+    <label for="date written">Name</label>
+   
+    <input type="text" class="form-control" id="Name"  value="{{Name}}" placeholder="Name" name="Name">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update details</button>
+</form>
+</div>
+{% endblock %}

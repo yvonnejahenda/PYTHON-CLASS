@@ -1,0 +1,40 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+<body>
+  <div class="container">
+  <p>Welcome to Student management module would you like </p>
+  <ul>
+    <li>  <a href="/entries">See list of entries </a> </li>
+    <li><a href="/register"> View list of entries </a></li>
+  </ul>
+  <div class="container">
+  <form action>
+  <div class="form-group">
+    <label for="day">Day of the week</label>
+    <input type="text" class="form-control" id="day" placeholder="Day of the week" name="day">
+    
+  </div>
+  <div class="form-group">
+    <label for="content">Add your content</label>
+    <input type="text" class="form-control" id="content" placeholder="Add your content" name="content">
+  </div>
+  
+</form>
+
+ <div class="form-group">
+    <label for="date">Date written</label>
+    <input type="text" class="form-control" id="date" placeholder="Date written" name="date">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit here</button>
+
+
+
+
+
+
+
+
+</div>
+{% endblock %}
